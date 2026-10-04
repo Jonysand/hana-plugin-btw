@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "id": "btw",
+  "name": "BTW Side Question",
+  "version": "0.2.0",
+  "description": "/btw 侧信道问答：在对话中临时问一个问题，能看到当前会话的完整上下文，但问题与回答都不进入会话记录。回答存入侧边栏小窗可随时回看。等价于 Claude Code 的 /btw。",
+  "trust": "full-access",
+  "capabilities": ["model.sample", "session.read"],
+  "contributes": {
+    "widget": {
+      "title": "/btw 问答记录",
+      "id": "btw",
+      "route": "/widget",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/><path d=\"M9 9.5h6\"/><path d=\"M9 13.5h3\"/></svg>"
+    }
+  },
+  "ui": {
+    "hostCapabilities": ["clipboard.writeText"]
+  },
+  "interface": {
+    "displayName": "/btw 侧信道问答",
+    "shortDescription": "临时问一句，看到上下文，但不污染会话；回答存小窗可回看",
+    "category": "Productivity",
+    "tags": ["btw", "slash", "side-question"],
+    "author": "Hanako"
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Plugin runtime data (never commit user Q&A history)
+**/plugin-data/
+plugin-data/
+history.json
+status.json
+debug.log
+
+# Dev artifacts
+.tmp-*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
